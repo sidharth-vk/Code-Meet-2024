@@ -1,0 +1,198 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="main-content">
+    <!-- Start Breadcarumb area  -->
+    <div class="breadcrumb-area breadcarumb-style-1 pt--180 pb--100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner text-center">
+                        <h3 class="title h3">Code Meet 2024 Paper Pitch</h3>
+                        <ul class="page-list">
+                            <li class="rainbow-breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="rainbow-breadcrumb-item active">Events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcarumb area  -->
+</div>
+
+
+<div class="rainbow-blog-section rainbow-section-gap-big bg-color-1 ">
+    <div class="container">
+        <div class="row row--30">
+            <div class="col-lg-12">
+                <div class="rainbow-blog-details-area">
+                    <div class="post-page-banner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content text-center">
+                                        <div class="thumbnail"><img class="w-100 radius" src="{% static "assets\images\images\Paper Pitch.png" %}" alt="Blog Images"></div>
+                                        <ul class="rainbow-meta-list">
+                                            <li>
+                                                <i class="feather-user"></i>
+                                                <a href="">Technical</a>
+                                            </li>
+                                            <li>
+                                                <i class="feather-calendar"></i>
+                                                19 Oct 2024
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-details-content pt--40">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content">
+                                        <h2 class="title">
+                                            Code Meet 2024 Paper Pitch
+                                        </h2>
+
+
+                                        <h6>1.Description :</h6>
+                                        <p>Paper Pitch is a unique idea-pitching competition where teams of 2 or 4 members are challenged to develop innovative solutions for current real-world problems. Before entering the competition, participants can research and gather information from online journals and resources. However, once inside the competition room, they must rely solely on their creativity, analytical thinking, and pen-and-paper skills to structure and present their ideas. The competition is designed to test problem-solving abilities without the aid of any electronic devices, focusing on a clear, well-organized plan and flowcharts to outline their solutions.</p>
+
+                                        <h6>2.Rules :</h6>
+                                        <p> 
+                                        
+                                            •	Team Composition: Each team must consist of 2 to 4 participants.
+                                            <br>
+                                            •	Pre-Competition Research: Participants are allowed to refer to web journals and other materials before entering the competition. They can bring printed journals for reference, which will be inspected by volunteers.
+                                            <br>
+                                            •	Isolation: No electronic devices (laptops, mobile phones, tablets, etc.) are allowed in the competition room. The room will be isolated to ensure a fair and focused environment.
+                                            <br>
+                                            •	Materials Provided: Each team will be given 10 to 20 A4 sheets for drafting their ideas, flowcharts, and plans.
+                                            <br>
+                                            •	Task: Teams need to conceptualize and structure a solution to a current problem, clearly presenting it with a well-thought-out plan and flowchart.
+                                            <br>
+                                            •	Evaluation Criteria: Solutions will be judged based on creativity, practicality, structure, and clarity of the idea, as well as the quality of flowcharts and the plan presented.
+                                            <br>
+                                            •	Time Limit: The competition will last for 2 hours.
+                                            <br>
+                                            •	Submission: Teams must submit their structured idea along with the flowchart on the provided sheets before the time limit.
+                                            <br>
+                                            •	Prize: 1st Prize: ₹5000, 2nd Prize: ₹2500, All participants will receive participation certificates and small gift hampers.
+
+
+                                        </p>
+
+                                        <h6>3.Required Materials :</h6>
+                                        <p> 
+                                        
+                                            •	A4 sheets (10 to 20 per team) - Will be provided by Event Cordinator
+                                            <br>
+                                            •	Pens, pencils, erasers, and rulers (provided by participants)
+                                            <br>
+                                            •	Printed journals (cross-checked by volunteers before entry)
+
+
+
+                                        </p>
+                                        <h6>4.Price :</h6>
+                                        <p> 
+                                        
+                                            •	First Price : 5000 INR
+                                            <br>
+                                            •	Second price : 2500 INR
+                                            <br>
+                                            •	Other Participants will have Participation Certificate
+
+
+
+                                        </p>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
+                        <a class='btn-default color-blacked' href='{% static "assets\Rulebook Code Meet 2024.pdf" %}' download>Download Rulebook<i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                    </div>
+                    
+                    <div class="blog-details-content pt--40 rainbow-section-gapBottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content">
+
+                                        
+
+                                        <div class="">
+                                            <div>
+                                                <h4 class="text">Contact :</h4>
+                                            </div>
+                                            
+                                            <div class="tagcloud">
+                                                <a href="#">Sidharth : +91 97781 65158</a>
+                                                <a href="#">Abrar : +91 78298 43942</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Start Contact Form Area  -->
+                                        <div class="rainbow-comment-form pt--60">
+                                            <div class="inner">
+                                                <div class="section-title">
+                                                    <h2 class="title">Register Now</h2>
+                                                </div>
+                                                <form method="POST" class="mt--40">
+                                                    {% csrf_token %}
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-12 col-12">
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="name" placeholder="Name" required>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="email" name="email" placeholder="Email" required>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="collegename" placeholder="College Name" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-12 col-12">
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="teamname" placeholder="Team Name" required>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="event" value="Paper Pitch" placeholder="Event" disabled>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="phone" placeholder="Mobile Number" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <div class="blog-btn">
+                                                                <button type="submit" class="btn-default"><span>Register Now</span></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- End Contact Form Area  -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+

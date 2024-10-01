@@ -1,0 +1,171 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="main-content">
+    <!-- Start Breadcarumb area  -->
+    <div class="breadcrumb-area breadcarumb-style-1 pt--180 pb--100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner text-center">
+                        <h3 class="title h3">Code Meet 2024 GeoGuessr</h3>
+                        <ul class="page-list">
+                            <li class="rainbow-breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="rainbow-breadcrumb-item active">Events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcarumb area  -->
+</div>
+
+
+<div class="rainbow-blog-section rainbow-section-gap-big bg-color-1 ">
+    <div class="container">
+        <div class="row row--30">
+            <div class="col-lg-12">
+                <div class="rainbow-blog-details-area">
+                    <div class="post-page-banner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content text-center">
+                                        <div class="thumbnail"><img class="w-100 radius" src="{% static "assets\images\images\Geo Guesser.png" %}" alt="Blog Images"></div>
+                                        <ul class="rainbow-meta-list">
+                                            <li>
+                                                <i class="feather-user"></i>
+                                                <a href="">Technical</a>
+                                            </li>
+                                            <li>
+                                                <i class="feather-calendar"></i>
+                                                19 Oct 2024
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-details-content pt--40">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content">
+                                        <h2 class="title">
+                                            Code Meet 2024 GeoGuessr
+                                        </h2>
+
+
+                                        <h6>1.Description :</h6>
+                                        <p>GeoGuessr invites you to embark on a thrilling journey around the world without leaving your seat. This event is inspired by the popular online game that challenges players to put their geographical knowledge to the test. Participants will find themselves immersed in an exciting quest to pinpoint the exact locations of places from the far reaches of the globe, all using the power of Google Maps. GeoGuessr promises fun, adventure, and a unique way to explore our planet.</p>
+
+                                        <h6>2.Rules :</h6>
+                                        <p> 
+                                        
+                                            1. Round-Based Play: The event will be divided into a series of rounds, each with its own predetermined location or theme, keeping the competition fresh and exciting.
+                                            <br>
+                                            2. Individual : Participants must play the game individually, relying solely on their own knowledge and instincts. Collaboration or sharing of answers is strictly prohibited.
+                                            <br>
+                                            3. Designated Devices: To ensure fairness, participants will play the game on the devices provided by the event organizers, maintaining consistency and minimizing external advantages.
+                                            <br>
+                                            4. Timed Challenges: Each round will present a time limit of 5-10 minutes, depending on the complexity of the location or theme. Quick thinking and geographical intuition are key.
+                                            <br>
+                                            5. Scoring System: Points will be awarded based on the accuracy of participants' guesses regarding the actual location of the places shown in the game.
+                                            <br>
+                                            6. Tie-Breaker: In the event of a tie, the participant who successfully completed the game in the shortest amount of time will be declared the winner.
+                                            <br>
+                                            7. Fair Play: Sportsmanship is paramount. Any form of cheating or manipulation of the game will result in immediate disqualification.
+                                            <br>
+                                            8. Decisions Binding: The decisions of the event organizers and the esteemed panel of judges will be considered final and binding in all matters concerning the game and its outcome.
+
+
+                                        </p>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
+                        <a class='btn-default color-blacked' href='{% static "assets\Rulebook Code Meet 2024.pdf" %}' download>Download Rulebook<i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                    </div>
+                    
+                    <div class="blog-details-content pt--40 rainbow-section-gapBottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content">
+
+                                        
+
+                                        <div class="">
+                                            <div>
+                                                <h4 class="text">Contact :</h4>
+                                            </div>
+                                            
+                                            <div class="tagcloud">
+                                                <a href="#">Sidharth : +91 97781 65158</a>
+                                                <a href="#">Abrar : +91 78298 43942</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Start Contact Form Area  -->
+                                        <div class="rainbow-comment-form pt--60">
+                                            <div class="inner">
+                                                <div class="section-title">
+                                                    <h2 class="title">Register Now</h2>
+                                                </div>
+                                                <form method="POST" class="mt--40">
+                                                    {% csrf_token %}
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-12 col-12">
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="name" placeholder="Name" required>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="email" name="email" placeholder="Email" required>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="collegename" placeholder="College Name" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-12 col-12">
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="teamname" placeholder="Team Name" required>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="event" value="GeoGuessr" placeholder="Event" disabled>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="phone" placeholder="Mobile Number" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <div class="blog-btn">
+                                                                <button type="submit" class="btn-default"><span>Register Now</span></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- End Contact Form Area  -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+

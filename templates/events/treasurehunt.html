@@ -1,0 +1,178 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="main-content">
+    <!-- Start Breadcarumb area  -->
+    <div class="breadcrumb-area breadcarumb-style-1 pt--180 pb--100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner text-center">
+                        <h3 class="title h3">Code Meet 2024 Treasure Hunt</h3>
+                        <ul class="page-list">
+                            <li class="rainbow-breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="rainbow-breadcrumb-item active">Events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcarumb area  -->
+</div>
+
+
+<div class="rainbow-blog-section rainbow-section-gap-big bg-color-1 ">
+    <div class="container">
+        <div class="row row--30">
+            <div class="col-lg-12">
+                <div class="rainbow-blog-details-area">
+                    <div class="post-page-banner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content text-center">
+                                        <div class="thumbnail"><img class="w-100 radius" src="{% static "assets\images\images\Treasure Hunt.png" %}" alt="Blog Images"></div>
+                                        <ul class="rainbow-meta-list">
+                                            <li>
+                                                <i class="feather-user"></i>
+                                                <a href="">Technical</a>
+                                            </li>
+                                            <li>
+                                                <i class="feather-calendar"></i>
+                                                19 Oct 2024
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-details-content pt--40">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content">
+                                        <h2 class="title">
+                                            Code Meet 2024 Treasure Hunt
+                                        </h2>
+
+
+                                        <h6>1.Description :</h6>
+                                        <p>Get ready for an exciting adventure at SUIET College's "Code Meet 2024 Treasure Hunt"! This thrilling event combines the excitement of coding with the thrill of a real-life treasure hunt. Participants will be provided with a series of QR codes, each containing clues that will lead them closer to the ultimate treasure. To succeed, contestants must use their coding skills to decipher the clues and unlock the location of the hidden treasure. It's a race against time as teams follow the digital breadcrumbs to uncover the prize.</p>
+
+                                        <h6>2.Rules :</h6>
+                                        <p> 
+                                        
+                                            1. A treasure hunt is a game where participants follow clues to find a hidden object or treasure.
+                                            <br>
+                                            2. Participants will be divided into teams of a predetermined number of members.
+                                            <br>
+                                            3. Each team will be given a set of clues to follow to find the hidden treasure.
+                                            <br>
+                                            4. The clues should be challenging but not impossible to solve.
+                                            <br>
+                                            5. Participants should not destroy any property or disturb the environment while searching for the treasure.
+                                            <br>
+                                            6. The team that finds the hidden treasure first will be declared the winner.
+                                            <br>
+                                            7. The treasure should not be located in any dangerous or off-limits areas.
+                                            <br>
+                                            8. The event organizers should ensure the safety of all participants and provide necessary instructions and guidance.
+                                            <br>
+                                            9. Any form of cheating or plagiarism will result in immediate disqualification from the competition.
+                                            <br>
+                                            10. Participants should respect other teams and not interfere with their search for the treasure.
+                                            <br>
+                                            11. The event organizers decision will be final and binding.
+                                            <br>
+                                            12. Team size can be 2-4.
+
+                                        </p>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
+                        <a class='btn-default color-blacked' href='{% static "assets\Rulebook Code Meet 2024.pdf" %}' download>Download Rulebook<i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                    </div>
+                    
+                    <div class="blog-details-content pt--40 rainbow-section-gapBottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content">
+
+                                        
+
+                                        <div class="">
+                                            <div>
+                                                <h4 class="text">Contact :</h4>
+                                            </div>
+                                            
+                                            <div class="tagcloud">
+                                                <a href="#">Sidharth : +91 97781 65158</a>
+                                                <a href="#">Abrar : +91 78298 43942</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Start Contact Form Area  -->
+                                        <div class="rainbow-comment-form pt--60">
+                                            <div class="inner">
+                                                <div class="section-title">
+                                                    <h2 class="title">Register Now</h2>
+                                                </div>
+                                                <form method="POST" class="mt--40">
+                                                    {% csrf_token %}
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-12 col-12">
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="name" placeholder="Name" required>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="email" name="email" placeholder="Email" required>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="collegename" placeholder="College Name" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-12 col-12">
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="teamname" placeholder="Team Name" required>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="event" value="Treasure Hunt" placeholder="Event" disabled>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="phone" placeholder="Mobile Number" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <div class="blog-btn">
+                                                                <button type="submit" class="btn-default"><span>Register Now</span></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- End Contact Form Area  -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
